@@ -2,4 +2,6 @@ services:
   mongo:
     image: mongo:7.0.12@sha256:ae1cf99fa7bfb007db8416ad4f3980c46054d949fa55d28e6d301a813fee6c06
     tmpfs: /data/db
-    command: --bind_ip localhost,mongo
+    command: --bind_ip 0.0.0.0
+    ports:
+      - '27017:27017'
