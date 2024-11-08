@@ -120,10 +120,11 @@ GEM
     minitest (5.25.1)
     mongo (2.21.0)
       bson (>= 4.14.1, < 6.0.0)
-    mongoid (9.0.2)
+    mongoid (8.1.6)
       activemodel (>= 5.1, < 7.3, != 7.0.0)
       concurrent-ruby (>= 1.0.5, < 2.0)
       mongo (>= 2.18.0, < 3.0.0)
+      ruby2_keywords (~> 0.0.5)
     net-imap (0.5.0)
       date
       net-protocol
@@ -229,6 +230,7 @@ GEM
       rbs (>= 3, < 4)
       sorbet-runtime (>= 0.5.10782)
     ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
     securerandom (0.3.1)
     sorbet-runtime (0.5.11642)
     sprockets (4.2.1)
@@ -259,7 +261,7 @@ PLATFORMS
 DEPENDENCIES
   brakeman
   debug
-  mongoid (~> 9.0.2)
+  mongoid (~> 8.1.6)
   puma (>= 5.0)
   rails (~> 7.2.1)
   rubocop-rails-omakase

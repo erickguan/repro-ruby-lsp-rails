@@ -1,0 +1,33 @@
+development:
+  clients:
+    default:
+      database: dev
+      hosts:
+        - 'localhost:27017'
+      options:
+        truncate_logs: false
+  options:
+    use_utc: true
+    include_root_in_json: true
+
+test:
+  clients:
+    default:
+      database: test
+      hosts:
+        - 'localhost:27017'
+  options:
+    use_utc: true
+    include_root_in_json: true
+
+sandbox:
+  clients:
+    default:
+      database: sandbox
+      hosts:
+        - 'localhost:27017'
+      options:
+        truncate_logs: false
+  options:
+    use_utc: true
+    include_root_in_json: true
